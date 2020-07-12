@@ -1,6 +1,8 @@
 package com.example.canastaapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -8,7 +10,9 @@ import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.PathInterpolator;
@@ -25,13 +29,15 @@ import static java.util.Arrays.asList;
 
 public class MainActivity extends AppCompatActivity {
 
-
     PathInterpolator pathInterpolator;
     ArrayList<float[]> XAndY;
     ArrayList<ImageView> imageViews;
     ArrayList<Integer> cardIntegers;
     int j = -1;
-    int k = -1;
+    int k = 25;
+
+    ImageView test;
+    boolean showingBack = false;
 
     int gameState = 0;
 
@@ -90,9 +96,205 @@ public class MainActivity extends AppCompatActivity {
 
     public void assignImage(final ImageView imageView, final int i) {
 
+        imageView.animate()//.withLayer
+                .rotationY(90)
+                .setDuration(300)
+                .withEndAction(
+                        new Runnable() {
+                            @Override public void run() {
+
+
+                                //<change the image...>
+
+                                if (i == 101) {
+                                    imageView.setImageResource(R.drawable.ace_of_clubs);
+                                }
+                                else if (i == 102) {
+                                    imageView.setImageResource(R.drawable.two_of_clubs);
+
+                                }
+                                else if (i == 103) {
+                                    imageView.setImageResource(R.drawable.three_of_clubs);
+                                }
+                                else if (i == 104) {
+                                    imageView.setImageResource(R.drawable.four_of_clubs);
+                                }
+                                else if (i == 105) {
+                                    imageView.setImageResource(R.drawable.five_of_clubs);
+                                }
+                                else if (i == 106) {
+                                    imageView.setImageResource(R.drawable.six_of_clubs);
+                                }
+                                else if (i == 107) {
+                                    imageView.setImageResource(R.drawable.seven_of_clubs);
+
+                                }
+                                else if (i == 108) {
+                                    imageView.setImageResource(R.drawable.eight_of_clubs);
+                                }
+                                else if (i == 109) {
+                                    imageView.setImageResource(R.drawable.nine_of_clubs);
+                                }
+                                else if (i == 110) {
+                                    imageView.setImageResource(R.drawable.ten_of_clubs);
+                                }
+                                else if (i == 111) {
+                                    imageView.setImageResource(R.drawable.jack_of_clubs);
+                                }
+                                else if (i == 112) {
+                                    imageView.setImageResource(R.drawable.queen_of_clubs);
+
+                                }
+                                else if (i == 113) {
+                                    imageView.setImageResource(R.drawable.king_of_clubs);
+                                }
+                                else if (i == 201) {
+                                    imageView.setImageResource(R.drawable.ace_of_diamonds);
+                                }
+                                else if (i == 202) {
+                                    imageView.setImageResource(R.drawable.two_of_diamonds);
+                                }
+                                else if (i == 203) {
+                                    imageView.setImageResource(R.drawable.three_of_diamonds);
+                                }
+                                else if (i == 204) {
+                                    imageView.setImageResource(R.drawable.four_of_diamonds);
+
+                                }
+                                else if (i == 205) {
+                                    imageView.setImageResource(R.drawable.five_of_diamonds);
+                                }
+                                else if (i == 206) {
+                                    imageView.setImageResource(R.drawable.six_of_diamonds);
+                                }
+                                else if (i == 207) {
+                                    imageView.setImageResource(R.drawable.seven_of_diamonds);
+                                }
+                                else if (i == 208) {
+                                    imageView.setImageResource(R.drawable.eight_of_diamonds);
+                                }
+                                else if (i == 209) {
+                                    imageView.setImageResource(R.drawable.nine_of_diamonds);
+
+                                }
+                                else if (i == 210) {
+                                    imageView.setImageResource(R.drawable.ten_of_diamonds);
+                                }
+                                else if (i == 211) {
+                                    imageView.setImageResource(R.drawable.jack_of_diamonds);
+                                }
+                                else if (i == 212) {
+                                    imageView.setImageResource(R.drawable.queen_of_diamonds);
+                                }
+                                else if (i == 213) {
+                                    imageView.setImageResource(R.drawable.king_of_diamonds);
+                                }
+                                else if (i == 301) {
+                                    imageView.setImageResource(R.drawable.ace_of_hearts);
+
+                                }
+                                else if (i == 302) {
+                                    imageView.setImageResource(R.drawable.two_of_hearts);
+                                }
+                                else if (i == 303) {
+                                    imageView.setImageResource(R.drawable.three_of_hearts);
+                                }
+                                else if (i == 304) {
+                                    imageView.setImageResource(R.drawable.four_of_hearts);
+                                }
+                                else if (i == 305) {
+                                    imageView.setImageResource(R.drawable.five_of_hearts);
+                                }
+                                else if (i == 306) {
+                                    imageView.setImageResource(R.drawable.six_of_hearts);
+
+                                }
+                                else if (i == 307) {
+                                    imageView.setImageResource(R.drawable.seven_of_hearts);
+                                }
+                                else if (i == 308) {
+                                    imageView.setImageResource(R.drawable.eight_of_hearts);
+                                }
+                                else if (i == 309) {
+                                    imageView.setImageResource(R.drawable.nine_of_hearts);
+                                }
+                                else if (i == 310) {
+                                    imageView.setImageResource(R.drawable.ten_of_hearts);
+                                }
+                                else if (i == 311) {
+                                    imageView.setImageResource(R.drawable.jack_of_hearts);
+
+                                }
+                                else if (i == 312) {
+                                    imageView.setImageResource(R.drawable.queen_of_hearts);
+                                }
+                                else if (i == 313) {
+                                    imageView.setImageResource(R.drawable.king_of_hearts);
+                                }
+                                else if (i == 401) {
+                                    imageView.setImageResource(R.drawable.ace_of_spades);
+                                }
+                                else if (i == 402) {
+                                    imageView.setImageResource(R.drawable.two_of_spades);
+
+                                }
+                                else if (i == 403) {
+                                    imageView.setImageResource(R.drawable.three_of_spades);
+                                }
+                                else if (i == 404) {
+                                    imageView.setImageResource(R.drawable.four_of_spades);
+                                }
+                                else if (i == 405) {
+                                    imageView.setImageResource(R.drawable.five_of_spades);
+                                }
+                                else if (i == 406) {
+                                    imageView.setImageResource(R.drawable.six_of_spades);
+                                }
+                                else if (i == 407) {
+                                    imageView.setImageResource(R.drawable.seven_of_spades);
+
+                                }
+                                else if (i == 408) {
+                                    imageView.setImageResource(R.drawable.eight_of_spades);
+                                }
+                                else if (i == 409) {
+                                    imageView.setImageResource(R.drawable.nine_of_spades);
+                                }
+                                else if (i == 410) {
+                                    imageView.setImageResource(R.drawable.ten_of_spades);
+                                }
+                                else if (i == 411) {
+                                    imageView.setImageResource(R.drawable.jack_of_spades);
+                                }
+                                else if (i == 412) {
+                                    imageView.setImageResource(R.drawable.queen_of_spades);
+
+                                }
+                                else if (i == 413) {
+                                    imageView.setImageResource(R.drawable.king_of_spades);
+                                }
+
+                                        /*if (showingBack) {
+                                            showingBack = false;
+                                            test.setImageResource(R.drawable.ace_of_spades);
+                                        } else {
+                                            showingBack = true;
+                                            test.setImageResource(R.drawable.cardback);
+                                        }*/
+
+                                // second quarter turn
+                                imageView.setRotationY(-90);
+                                imageView.animate()
+                                        .rotationY(0)
+                                        .setDuration(300)
+                                        .start();
+                            }
+                        }
+                ).start();
+
         //imageView.animate().rotationYBy(360).setDuration(100);
 
-        final ObjectAnimator oa1 = ObjectAnimator.ofFloat(imageView, "scaleX", 1f, 0f);
+        /*final ObjectAnimator oa1 = ObjectAnimator.ofFloat(imageView, "scaleX", 1f, 0f);
         final ObjectAnimator oa2 = ObjectAnimator.ofFloat(imageView, "scaleX", 0f, 1f);
         oa1.setInterpolator(new DecelerateInterpolator());
         oa2.setInterpolator(new AccelerateDecelerateInterpolator());
@@ -273,15 +475,19 @@ public class MainActivity extends AppCompatActivity {
                 oa2.start();
             }
         });
-        oa1.start();
+        oa1.start();*/
 
 
 
-        }
+    }
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         getSupportActionBar().hide();
 
@@ -348,35 +554,8 @@ public class MainActivity extends AppCompatActivity {
         XAndY = new ArrayList<>();
 
 
-        //6-9-12-3
+        //
 
-        XAndY.add(new float[] {665, 980});
-        XAndY.add(new float[] {770, 980});
-        XAndY.add(new float[] {875, 980});
-        XAndY.add(new float[] {980, 980});
-        XAndY.add(new float[] {1085, 980});
-        XAndY.add(new float[] {1190, 980});
-        XAndY.add(new float[] {1295, 980});
-        XAndY.add(new float[] {1400, 980});
-        XAndY.add(new float[] {1505, 980});
-        XAndY.add(new float[] {1610, 980});
-        XAndY.add(new float[] {1715, 980});
-        XAndY.add(new float[] {1820, 980});
-        XAndY.add(new float[] {1925, 980});
-
-        XAndY.add(new float[] {119, 140});
-        XAndY.add(new float[] {119, 210});
-        XAndY.add(new float[] {119, 280});
-        XAndY.add(new float[] {119, 350});
-        XAndY.add(new float[] {119, 420});
-        XAndY.add(new float[] {119, 490});
-        XAndY.add(new float[] {119, 560});
-        XAndY.add(new float[] {119, 630});
-        XAndY.add(new float[] {119, 700});
-        XAndY.add(new float[] {119, 770});
-        XAndY.add(new float[] {119, 840});
-        XAndY.add(new float[] {119, 910});
-        XAndY.add(new float[] {119, 980});
 
         XAndY.add(new float[] {665, 70});
         XAndY.add(new float[] {770, 70});
@@ -406,6 +585,38 @@ public class MainActivity extends AppCompatActivity {
         XAndY.add(new float[] {2463, 910});
         XAndY.add(new float[] {2463, 980});
 
+        XAndY.add(new float[] {665, 980});
+        XAndY.add(new float[] {770, 980});
+        XAndY.add(new float[] {875, 980});
+        XAndY.add(new float[] {980, 980});
+        XAndY.add(new float[] {1085, 980});
+        XAndY.add(new float[] {1190, 980});
+        XAndY.add(new float[] {1295, 980});
+        XAndY.add(new float[] {1400, 980});
+        XAndY.add(new float[] {1505, 980});
+        XAndY.add(new float[] {1610, 980});
+        XAndY.add(new float[] {1715, 980});
+        XAndY.add(new float[] {1820, 980});
+        XAndY.add(new float[] {1925, 980});
+
+        XAndY.add(new float[] {119, 140});
+        XAndY.add(new float[] {119, 210});
+        XAndY.add(new float[] {119, 280});
+        XAndY.add(new float[] {119, 350});
+        XAndY.add(new float[] {119, 420});
+        XAndY.add(new float[] {119, 490});
+        XAndY.add(new float[] {119, 560});
+        XAndY.add(new float[] {119, 630});
+        XAndY.add(new float[] {119, 700});
+        XAndY.add(new float[] {119, 770});
+        XAndY.add(new float[] {119, 840});
+        XAndY.add(new float[] {119, 910});
+        XAndY.add(new float[] {119, 980});
+
+
+
+
+
         cardIntegers = new ArrayList<>();
         for (int i=101; i<=113; i++) {
             cardIntegers.add(i);
@@ -420,49 +631,53 @@ public class MainActivity extends AppCompatActivity {
             cardIntegers.add(i);
         }
 
-        //Map<Integer, ImageView> [101,
+        //Collections.reverse(imageViews);
 
-        Collections.shuffle(cardIntegers);
-        final ArrayList<Integer> playerCards = new ArrayList<>();
-        for (int i=0;i<13;i++) {
+        /*final ArrayList<Integer> playerCards = new ArrayList<>();
+        for (int i=26;i<39;i++) {
             playerCards.add(cardIntegers.get(i));
-        }
+        }*/
+        
+        Collections.shuffle(cardIntegers);
+        Collections.sort(cardIntegers.subList(26, 39));
 
-        Collections.sort(playerCards);
+        //SHUFFLE ANIMATION:
 
-        imageViews.get(0).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
+        imageViews.get(1).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
             @Override
             public void run() {
-                imageViews.get(0).animate().setDuration(200).translationYBy(-300);
-                imageViews.get(5).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
+                imageViews.get(1).animate().setDuration(200).translationYBy(-300);
+                imageViews.get(7).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                     @Override
                     public void run() {
-                        imageViews.get(5).animate().setDuration(200).translationYBy(-300);
+                        imageViews.get(7).animate().setDuration(200).translationYBy(-300);
                         imageViews.get(9).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                             @Override
                             public void run() {
                                 imageViews.get(9).animate().setDuration(200).translationYBy(-300);
-                                imageViews.get(18).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
+                                imageViews.get(11).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                                     @Override
                                     public void run() {
-                                        imageViews.get(18).animate().setDuration(200).translationYBy(-300);
-                                        imageViews.get(0).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
+                                        imageViews.get(11).animate().setDuration(200).translationYBy(-300);
+                                        imageViews.get(1).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                                             @Override
                                             public void run() {
-                                                imageViews.get(0).animate().setDuration(200).translationYBy(-300);
-                                                imageViews.get(5).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
+                                                imageViews.get(1).animate().setDuration(200).translationYBy(-300);
+                                                imageViews.get(7).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                                                     @Override
                                                     public void run() {
-                                                        imageViews.get(5).animate().setDuration(200).translationYBy(-300);
+                                                        imageViews.get(7).animate().setDuration(200).translationYBy(-300);
                                                         imageViews.get(9).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                                                             @Override
                                                             public void run() {
                                                                 imageViews.get(9).animate().setDuration(200).translationYBy(-300);
-                                                                imageViews.get(18).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
+                                                                imageViews.get(11).animate().setDuration(200).translationYBy(300).withEndAction(new Runnable() {
                                                                     @Override
                                                                     public void run() {
-                                                                        imageViews.get(18).animate().setDuration(200).translationYBy(-300);
-                                                                        CountDownTimer timer = new CountDownTimer(8000, 100) {
+                                                                        imageViews.get(11).animate().setDuration(200).translationYBy(-300);
+
+                                                                        //DISTRIBUTE ANIMATION:
+                                                                        CountDownTimer timer = new CountDownTimer(7000, 100) {
                                                                             @Override
                                                                             public void onTick(long millisUntilFinished) {
 
@@ -481,20 +696,23 @@ public class MainActivity extends AppCompatActivity {
 
                                                                             @Override
                                                                             public void onFinish() {
-                                                                                CountDownTimer timer2 = new CountDownTimer(30000, 50) {
+                                                                                CountDownTimer timer2 = new CountDownTimer(3500, 100) {
                                                                                     @Override
                                                                                     public void onTick(long millisUntilFinished) {
 
-                                                                                        if (k<=11) {
+                                                                                        //SHOWING PLAYER'S CARDS ANIMATION:
+
+                                                                                        if (k<=37) {
                                                                                             k++;
-                                                                                            assignImage(imageViews.get(k), playerCards.get(k));
+                                                                                            assignImage(imageViews.get(k), cardIntegers.get(k));
                                                                                         }
 
                                                                                     }
 
                                                                                     @Override
                                                                                     public void onFinish() {
-                                                                                        //Toast.makeText(MainActivity.this, "Let's go!", Toast.LENGTH_SHORT).show();
+
+                                                                                        //Toast.makeText(MainActivity.this, "LET'S GO!", Toast.LENGTH_SHORT).show();
 
                                                                                     }
                                                                                 }.start();
@@ -519,34 +737,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        /*startButton.setOnClickListener(new View.OnClickListener() {
-                                           @Override
-                                           public void onClick(View v) {
-                                               //Collections.shuffle(cardIntegers);
-                                               startButton.setVisibility(View.INVISIBLE);
-                                               startButton.setEnabled(false);
-                                               for (int j = 0; j < 52; j++) {
-                                                   imageViews.get(j).animate()
-                                                           .x(XAndY.get(j)[0])
-                                                           .y(XAndY.get(j)[1])
-                                                           .setDuration(1000)
-                                                           .rotationBy(360)
-                                                           .start();
-                                               }
-
-                                               button2.setOnClickListener(new View.OnClickListener() {
-                                                   @Override
-                                                   public void onClick(View v) {
-                                                       Collections.shuffle(cardIntegers);
-                                                       for (int j = 0; j < 13; j++) {
-                                                           assignImage(imageViews.get(j), cardIntegers.get(j));
-                                                       }
-                                                   }
-                                               });
 
 
-                                           }
-                                       });*/
+
     }
 }
 
@@ -554,176 +747,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            /*for (int i = 0; i < 52; i++) {
-                final int finalI = i;
-                imageViews.get(i).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        if (gameState == 0) {
-
-                            for (int j = 0; j < 52; j++) {
-                                imageViews.get(j).animate()
-                                        .x(XAndY.get(j)[0])
-                                        .y(XAndY.get(j)[1])
-                                        .setDuration(1000)
-                                        .rotation(360)
-                                        .start();
-
-
-                            }
-                    }
-                    }
-                });
-            }*/
-
-
-        /*middleCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                middleCard.animate()
-                        .x(XAndY.get(51)[0])
-                        .y(XAndY.get(51)[1])
-                        .setDuration(1000)
-                        .rotation(360)
-                        .start();
-
-                //Toast.makeText(MainActivity.this, String.valueOf(XAndY.get(51)[0]), Toast.LENGTH_SHORT).show();
-
-            }
-        });*/
 
 
 
 
-
-
-
-
-
-
-/*ImageView imageView20;
-    ImageView imageView;
-    ImageView imageView2;
-    ImageView imageView3;
-    ImageView imageView4;
-    ImageView imageView5;
-    ImageView imageView6;
-    ImageView imageView7;
-    ImageView imageView8;
-    ImageView imageView9;
-    ImageView imageView10;
-    ImageView imageView11;
-    ImageView imageView13;
-
-    ImageView imageView14;
-    ImageView imageView15;
-    ImageView imageView16;
-    ImageView imageView17;
-    ImageView imageView18;
-    ImageView imageView19;
-    ImageView imageView34;
-    ImageView imageView35;
-    ImageView imageView36;
-    ImageView imageView37;
-    ImageView imageView38;
-    ImageView imageView39;
-    ImageView imageView40;
-
-    ImageView imageView41;
-    ImageView imageView43;
-    ImageView imageView44;
-    ImageView imageView45;
-    ImageView imageView46;
-    ImageView imageView47;
-    ImageView imageView48;
-    ImageView imageView49;
-    ImageView imageView50;
-    ImageView imageView51;
-    ImageView imageView52;
-    ImageView imageView53;
-    ImageView imageView54;
-
-    ImageView imageView55;
-    ImageView imageView56;
-    ImageView imageView57;
-    ImageView imageView58;
-    ImageView imageView59;
-    ImageView imageView60;
-    ImageView imageView61;
-    ImageView imageView62;
-    ImageView imageView63;
-    ImageView imageView64;
-    ImageView imageView65;
-    ImageView imageView66;
-    ImageView imageView67;*/
-
-
-/*imageView20= findViewById(R.id.imageView20);
-        imageView = findViewById(R.id.imageView);
-        imageView2 = findViewById(R.id.imageView2);
-        imageView3 = findViewById(R.id.imageView3);
-        imageView4 = findViewById(R.id.imageView4);
-        imageView5 = findViewById(R.id.imageView5);
-        imageView6 = findViewById(R.id.imageView6);
-        imageView7 = findViewById(R.id.imageView7);
-        imageView8 = findViewById(R.id.imageView8);
-        imageView9 = findViewById(R.id.imageView9);
-        imageView10 = findViewById(R.id.imageView10);
-        imageView11 = findViewById(R.id.imageView11);
-        imageView13 = findViewById(R.id.imageView13);
-
-        imageView14 = findViewById(R.id.imageView14);
-        imageView15 = findViewById(R.id.imageView15);
-        imageView16 = findViewById(R.id.imageView16);
-        imageView17 = findViewById(R.id.imageView17);
-        imageView18 = findViewById(R.id.imageView18);
-        imageView19 = findViewById(R.id.imageView19);
-        imageView34 = findViewById(R.id.imageView34);
-        imageView35 = findViewById(R.id.imageView35);
-        imageView36 = findViewById(R.id.imageView36);
-        imageView37 = findViewById(R.id.imageView37);
-        imageView38 = findViewById(R.id.imageView38);
-        imageView39 = findViewById(R.id.imageView39);
-        imageView40 = findViewById(R.id.imageView40);
-
-        imageView41 = findViewById(R.id.imageView41);
-        imageView43 = findViewById(R.id.imageView43);
-        imageView44 = findViewById(R.id.imageView44);
-        imageView45 = findViewById(R.id.imageView45);
-        imageView46 = findViewById(R.id.imageView46);
-        imageView47 = findViewById(R.id.imageView47);
-        imageView48 = findViewById(R.id.imageView48);
-        imageView49 = findViewById(R.id.imageView49);
-        imageView50 = findViewById(R.id.imageView50);
-        imageView51 = findViewById(R.id.imageView51);
-        imageView52 = findViewById(R.id.imageView52);
-        imageView53 = findViewById(R.id.imageView53);
-        imageView54 = findViewById(R.id.imageView54);
-
-        imageView55 = findViewById(R.id.imageView55);
-        imageView56 = findViewById(R.id.imageView56);
-        imageView57 = findViewById(R.id.imageView57);
-        imageView58 = findViewById(R.id.imageView58);
-        imageView59 = findViewById(R.id.imageView59);
-        imageView60 = findViewById(R.id.imageView60);
-        imageView61 = findViewById(R.id.imageView61);
-        imageView62 = findViewById(R.id.imageView62);
-        imageView63 = findViewById(R.id.imageView63);
-        imageView64 = findViewById(R.id.imageView64);
-        imageView65 = findViewById(R.id.imageView65);
-        imageView66 = findViewById(R.id.imageView66);
-        imageView67 = findViewById(R.id.imageView67);
-
-
-        ArrayList<ImageView> imageViews = new ArrayList<>(asList(imageView20, imageView, imageView2, imageView3,
-                imageView4, imageView5, imageView6, imageView7, imageView8, imageView9, imageView10, imageView11, imageView13,
-                imageView14, imageView15, imageView16, imageView17, imageView18, imageView19, imageView34, imageView35, imageView36,
-                imageView37, imageView38, imageView39, imageView40, imageView41, imageView43, imageView44, imageView45, imageView46, imageView47,
-                imageView48, imageView49, imageView50, imageView51, imageView52, imageView53, imageView54,
-                imageView55, imageView56, imageView57, imageView58, imageView59, imageView60, imageView61, imageView62, imageView63, imageView64, imageView65,
-                imageView66, imageView67));*/
 
 
 
