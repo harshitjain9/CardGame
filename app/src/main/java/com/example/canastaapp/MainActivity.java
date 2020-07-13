@@ -637,7 +637,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i=26;i<39;i++) {
             playerCards.add(cardIntegers.get(i));
         }*/
-        
+
         Collections.shuffle(cardIntegers);
         Collections.sort(cardIntegers.subList(26, 39));
 

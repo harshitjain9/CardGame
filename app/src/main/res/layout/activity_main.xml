@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#057B09">
+
+    <ImageView
+        android:id="@+id/middleCard"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard2"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard3"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard4"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard5"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard6"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard7"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard8"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard9"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard10"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard11"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard12"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard13"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard14"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard15"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard16"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard17"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard18"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard19"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard20"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard21"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard22"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard23"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard24"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard25"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard26"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard27"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard28"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard29"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard30"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard31"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard32"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard33"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard34"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard35"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard36"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard37"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard38"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard39"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard40"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard41"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard42"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard43"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard44"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard45"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard46"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard47"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard48"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard49"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard50"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard51"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+    <ImageView
+        android:id="@+id/middleCard52"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="170dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cardback" />
+
+</RelativeLayout>
